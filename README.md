@@ -16,6 +16,7 @@ A beautiful, responsive weather dashboard with 3D effects, theme switching, and 
 - **Loading animations** for smooth experience
 
 ---
+https://github.com/Rishankgupta08/Weather-Forecasting-/tree/main
 
 ## 🛠️ Technologies Used
 
@@ -29,3 +30,8 @@ A beautiful, responsive weather dashboard with 3D effects, theme switching, and 
 ## 🚀 How to Use
 
 1. **Clone the repository:**
+  git clone https://github.com/Rishankgupta08/Weather-Forecasting-/tree/main
+2.**Open the project folder:**
+3. **Open `index.html` in your browser.**
+
+   
