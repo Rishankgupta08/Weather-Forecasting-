@@ -31,7 +31,9 @@ https://github.com/Rishankgupta08/Weather-Forecasting-/tree/main
 
 1. **Clone the repository:**
   git clone https://github.com/Rishankgupta08/Weather-Forecasting-/tree/main
+
 2.**Open the project folder:**
+
 3. **Open `index.html` in your browser.**
 
    
