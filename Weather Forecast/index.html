@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Weather Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span class="weather-icon">☀️</span>
+  <span class="weather-icon">🌧️</span>
+  <span class="weather-icon">⛅</span>
+
+  <header class="app-header">
+    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather App Logo" width="40">
+    <h1>🌍 Weather Dashboard</h1>
+  </header>
+
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p>Loading Weather App...</p>
+  </div>
+
+  <div class="dashboard">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search location...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <p class="location">Loading...</p>
+    <p class="temp">--°C</p>
+    <p class="description">--</p>
+    <div class="loading" id="loading"></div>
+    <div class="stats">
+      <div class="stat"><span>💧</span> <span id="humidity">--%</span></div>
+      <div class="stat"><span>🌬️</span> <span id="wind">-- km/h</span></div>
+    </div>
+    <button id="refreshBtn">Refresh Weather</button>
+    <button id="themeBtn" class="theme-btn">🌓 Light Theme</button>
+    <h2>5-Day Forecast</h2>
+    <div id="forecastContainer" class="forecast-container"></div>
+  </div>
+
+  <footer class="app-footer">
+    <p>Made with ❤️ by You</p>
+  </footer>
+
+  <script>
+    // Hide loading screen after 1.5 sec
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loadingScreen').style.display = 'none';
+      }, 1500);
+    });
+  </script>
+  <script src="weather.js"></script>
+</body>
+</html>
